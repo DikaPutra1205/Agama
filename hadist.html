@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiqih Ibadah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        :root {
+            --primary: #1E4D4E;
+            --secondary: #2A9D8F;
+            --accent: #E9C46A;
+            --text: #2B2D42;
+            --light: #F4F1DE;
+            --gradient-bg: linear-gradient(135deg, #1E4D4E, #2A9D8F);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        .nav {
+            background-color: var(--light);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .subtopic {
+            margin-bottom: 2rem;
+        }
+
+        .subtopic h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .subtopic p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .footer-links a {
+            color: white;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div data-aos="fade-down">
+            <h1>Hadits Pilihan</h1>
+            <p>Kumpulan hadits pendek yang penuh makna untuk kehidupan sehari-hari.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="agama.html">Beranda</a></li>
+                <li><a href="fiqih.html">Fiqih</a></li>
+                <li><a href="aqidah.html">Aqidah</a></li>
+                <li><a href="hadist.html">Hadist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="intro" style="background: var(--gradient-bg); color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem; text-shadow: 1px 1px 5px rgba(255,255,255, 0.9);">Pengantar Hadits</h2>
+            <p style="font-size: 1.1rem; text-align: center; line-height: 1.8; margin-bottom: 1.5rem;">
+                Hadits adalah segala perkataan, perbuatan, persetujuan, dan sifat yang disandarkan kepada Nabi Muhammad SAW. 
+                Hadits menjadi salah satu sumber hukum dalam Islam selain Al-Qur'an.
+            </p>
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 8px;">
+                <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent);">Jenis-Jenis Hadits</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.1rem; line-height: 1.8;">
+                    <li><strong>🔹 Hadits Shahih:</strong> Hadits dengan sanad kuat, perawi terpercaya, dan tanpa cacat atau keganjilan.</li>
+                    <li><strong>🔹 Hadits Hasan:</strong> Hadits dengan sanad lebih lemah dari shahih, tetapi tetap dapat dijadikan hujjah.</li>
+                    <li><strong>🔹 Hadits Dhaif:</strong> Hadits yang lemah karena kelemahan dalam sanad, perawi, atau isi (matan).</li>
+                </ul>
+            </div>
+        </section>        
+        
+        <div class="subtopic">
+            <h3>1. Hadist tentang Menuntut Ilmu</h3>
+            <p><strong>أُطْلُبُوا الْعِلْمَ مِنَ الْمَهْدِ اِلىَ اللَّهْدِ</strong></p>
+            <p><em>Utlubul ilma minal mahdi ilal lahdi.</em></p>
+            <p>Artinya: "Tuntutlah ilmu dari buaian sampai ke liang lahat." (Ibnu Abdil Barr)</p>
+            <p><strong>طَلَبُ الْعِلْمِ فَرِيْضَةٌ عَلَى كُلِّ مُسْلِمٍ</strong></p>
+            <p><em>Tolabul ilmi faridhotun ala kulli muslimin wa Muslimah.</em></p>
+            <p>Artinya: "Menuntut ilmu wajib bagi tiap muslim dan Muslimah." (HR. Ibnu Majah)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>2. Hadist Pendek tentang Keutamaan Mempelajari Al-Qur'an</h3>
+            <p><strong>خَيْرُكُمْ مَنْ تَعَلَّمَ اْلقُرْآنَ وَعَلَّمَهُ</strong></p>
+            <p><em>Khoirukum man ta’allamal qur’aana wa allamah.</em></p>
+            <p>Artinya: "Sebaik-baik kalian adalah orang yang mempelajari Al-Qur'an dan mengajarkannya." (HR. Bukhari
+                no. 5027)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>3. Hadist Pendek tentang Niat</h3>
+            <p><strong>إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ</strong></p>
+            <p><em>Innamal a’malu binniyat.</em></p>
+            <p>Artinya: "Sesungguhnya amal itu tergantung niatnya." (HR. Bukhari, no. 1 dan Muslim, no. 1907)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>4. Hadist Pendek tentang Kasih Sayang</h3>
+            <p><strong>مَنْ لَا يَرْحَمْ لَا يُرْحَمْ</strong></p>
+            <p><em>Man laa yarham laa yurham.</em></p>
+            <p>Artinya: "Barang siapa tidak menyayangi, tidak akan disayangi." (HR Muslim)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>5. Hadist Pendek tentang Kebersihan</h3>
+            <p><strong>الطُّهُورُ شَطْرُ الإِيْمَانِ</strong></p>
+            <p><em>Atthohuru syatrul iman.</em></p>
+            <p>Artinya: "Kebersihan itu sebagian dari iman." (HR Muslim)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>6. Hadist Pendek tentang Berbuat Baik</h3>
+            <p><strong>كُلُّ مَعْرُوْفٍ صَدَقَةٌ</strong></p>
+            <p><em>Kullu ma’rufin sodaqoh.</em></p>
+            <p>Artinya: "Setiap kebaikan adalah sedekah." (HR Al Bukhari dan Muslim)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>7. Hadist Pendek tentang Salat</h3>
+            <p><strong>الصلاة عماد الدين</strong></p>
+            <p><em>Assholatu imaduddin.</em></p>
+            <p>Artinya: "Sholat adalah tiang agama." (HR. Tirmidzi dan Ibnu Majah)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>8. Hadist tentang Nasihat</h3>
+            <p><strong>لدِّيْنُ النَّصِيْحَةُ</strong></p>
+            <p><em>Addinu nashihah.</em></p>
+            <p>Artinya: "Agama adalah nasihat." (HR. Muslim)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>9. Hadist tentang Keutamaan Membaca Al-Qur'an</h3>
+            <p><strong>الماهر بالقران مع السفرة الكرام البررة</strong></p>
+            <p><em>Al mahiru bil qur’ani ma’as safarotil qiromil baroroh.</em></p>
+            <p>Artinya: "Orang yang pintar membaca Al-Qur'an akan tinggal bersama Jibril." (HR. Bukhari Muslim)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>10. Hadist tentang Surga di Bawah Telapak Kaki Ibu</h3>
+            <p><strong>أَلْجَنَّةُ تَحْتَ أَقْدَامِ الْأُمَّهَاتِ</strong></p>
+            <p><em>Al jannatu tahta aqdamil ummahat.</em></p>
+            <p>Artinya: "Surga itu ada dibawah telapak kaki Ibu." (HR An-Nasa’i, Ibnu Majah, Ahmad)</p>
+        </div>
+
+        <div class="subtopic">
+            <h3>11. Hadist tentang Senyum</h3>
+            <p><strong>تَبَسُّمُكَ فِى وَجْهِ أَخِيْكَ صَدَقَةٌ</strong></p>
+            <p><em>Tabassumuka fi wajhi akhika sodaqoh.</em></p>
+            <p>Artinya: "Senyum engkau di hadapan saudaramu adalah sedekah." (HR At-Tirmidzi no. 1956, Ibnu Hibban, dll.)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>12. Hadist Pendek tentang Meninggalkan Hal yang Tidak Berguna</h3>
+            <p><strong>مِنْ حُسْنِ الْإِسلاَمِ الْمَرْءِ تَرْكُهُ مَا لاَ يَعْنِيْهِ</strong></p>
+            <p><em>Min husnil islamil mar’i tarquhu maa laa ya’ nih.</em></p>
+            <p>Artinya: "Sebagian dari kebaikan Islam, seseorang meninggalkan sesuatu yang tidak berguna." (HR. Tirmidzi)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>13. Hadist Pendek tentang Mencintai Sesama Muslim</h3>
+            <p><strong>لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيْهِ مَا يُحِبُّ لِنَفْسِهِ</strong></p>
+            <p><em>Laa yu’minu ahadukum hatta yuhibba liakhihi maa yuhibba linafsih.</em></p>
+            <p>Artinya: "Tidak sempurna iman seseorang, sehingga dia mencintai saudaranya seperti mencintai dirinya sendiri." (HR. Bukhari no. 13 dan Muslim no. 45)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>14. Hadist tentang Silaturahmi</h3>
+            <p><strong>إِتَّقُوْااللهَ وَصِلُوْا أَرْحَامَكُمْ</strong></p>
+            <p><em>Ittaqulla hawashilu arhamakaum.</em></p>
+            <p>Artinya: "Bertakwalah kepada Allah dan bersilaturrahimlah." (Hadist Hasan, Riwayat Ibnu ‘Asakir. Lihat Shahiihul jaami’ no.108)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>15. Hadist tentang Larangan Memutuskan Tali Silaturahmi</h3>
+            <p><strong>لايدخل الجنّة قاطع رحم</strong></p>
+            <p><em>Laa yadkhulul jannatu qoo tiurrahim.</em></p>
+            <p>Artinya: "Tidak masuk surga pemutus silaturrahim." (HR. Imam Bukhari)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>16. Hadist tentang Anjuran Berkata yang Baik</h3>
+            <p><strong>من كان يؤمن بالله واليوم الاخر فليقل خيراً أو ليصمت</strong></p>
+            <p><em>Man kaa na yu’minu billahi wal yaumil akhiri falyaqul khoiron auliyasmut.</em></p>
+            <p>Artinya: "Barang siapa yang beriman kepada Allah dan hari akhirat, maka berkatalah yang baik atau diam." (HR Bukhari, Muslim dan Ahmad)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>17. Hadist tentang Memuliakan Tamu</h3>
+            <p><strong>من كان ىءمن بالله واليوم الاخر فليكرم ضيفه</strong></p>
+            <p><em>Man kaa na yu’minu billahi wal yaumil akhiri falyukrim dhoifah.</em></p>
+            <p>Artinya: "Barang siapa beriman kepada Allah dan hari akhirat maka hendaklah memuliakan tamu." (HR. Bukhari)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>18. Hadist tentang Sesama Muslim Bersaudara</h3>
+            <p><strong>الْمُسْلِمُ أَخُوا الْمُسْلِمِ</strong></p>
+            <p><em>Al muslimu akhul muslim.</em></p>
+            <p>Artinya: "Muslim itu saudara bagi muslim lainnya." (Hadist Sahih Riwayat Al-Bukhari no. 2262)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>19. Hadist tentang Sabar dan Pemaaf</h3>
+            <p><strong>افضل الايمان الصبر والسماحة</strong></p>
+            <p><em>Afdlotul iimaanisshobru wassamaahaah.</em></p>
+            <p>Artinya: "Iman yang utama adalah sabar dan pemaaf." (HR Bukhari dan Ad Dailami)</p>
+        </div>
+        
+        <div class="subtopic">
+            <h3>20. Hadist Pendek tentang Dosa Lisan</h3>
+            <p><strong>أَكْثَرُ خَطَايَا ابْنِ آدَمَ فىِ لِسَانِهِ</strong></p>
+            <p><em>Aktsaru khotoyabni aadama fii lisanih.</em></p>
+            <p>Artinya: "Kebanyakan dosa anak-anak Adam itu ada pada lisannya." (HR Ath-Thabraniy, Abu Asy-Syaikh dan Ibnu Asakir)</p>
+        </div>
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Portal Belajar Islam adalah platform pembelajaran Islam online yang bertujuan memberikan akses
+                    pengetahuan tentang agama dari sumber terpercaya.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: contact@belajarislam.com</p>
+                <p>Telepon: +62 123 4567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Terkait</h3>
+                <div class="footer-links">
+                    <a href="agama.html">Beranda</a>
+                    <a href="fiqih.html">Fiqih</a>
+                    <a href="aqidah.html">Aqidah</a>
+                    <a href="hadist.html">Hadist</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+
+</html>

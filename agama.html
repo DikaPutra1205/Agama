@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Belajar Islam</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary: #1E4D4E;
+            --secondary: #2A9D8F;
+            --accent: #E9C46A;
+            --text: #2B2D42;
+            --light: #F4F1DE;
+            --gradient-bg: linear-gradient(135deg, #1E4D4E, #2A9D8F);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: var(--light);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .featured-topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .topic-card {
+            background: var(--light);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .topic-img {
+            height: 200px;
+            background: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: white;
+        }
+
+        .topic-content {
+            padding: 1.5rem;
+        }
+
+        .topic-content h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .footer-links a {
+            color: white;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div data-aos="fade-down">
+            <h1>Portal Belajar Islam</h1>
+            <p>Mempelajari Islam dari Sumber Terpercaya</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="agama.html">Beranda</a></li>
+                <li><a href="fiqih.html">Fiqih</a></li>
+                <li><a href="aqidah.html">Aqidah</a></li>
+                <li><a href="hadist.html">Hadist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="featured-topics">
+            <div class="topic-card" data-aos="fade-up">
+                <div class="topic-img">
+                    <i class="fas fa-pray"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Fiqih Ibadah</h3>
+                    <p>Pelajari tata cara ibadah sesuai dengan tuntunan Al-Quran dan Sunnah.</p>
+                    <a href="fiqih.html" class="btn">Pelajari Sekarang</a>
+                </div>
+            </div>
+            <div class="topic-card" data-aos="fade-up">
+                <div class="topic-img">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Hadits Pilihan</h3>
+                    <p>Mendalami makna dan pelajaran dari hadits-hadits pilihan Rasulullah ﷺ.</p>
+                    <a href="hadits.html" class="btn">Pelajari Sekarang</a>
+                </div>
+            </div>
+            <div class="topic-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="topic-img">
+                    <i class="fas fa-star-and-crescent"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Aqidah Islam</h3>
+                    <p>Memahami dasar-dasar keyakinan dalam agama Islam.</p>
+                    <a href="aqidah.html" class="btn">Pelajari Sekarang</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Portal Belajar Islam adalah platform pembelajaran Islam online yang bertujuan memberikan akses
+                    pengetahuan tentang agama dari sumber terpercaya.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: contact@belajarislam.com</p>
+                <p>Telepon: +62 123 4567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Terkait</h3>
+                <div class="footer-links">
+                    <a href="agama.html">Beranda</a>
+                    <a href="fiqih.html">Fiqih</a>
+                    <a href="aqidah.html">Aqidah</a>
+                    <a href="hadist.html">Hadist</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+
+</html>
